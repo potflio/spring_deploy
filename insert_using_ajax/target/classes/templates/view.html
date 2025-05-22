@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+</head>
+<body>
+    <h2>Student Details</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Mobile</th>
+            <th>Gender</th>
+            <th>Skill</th>
+        </tr>
+        <tr th:each="user : ${data}">
+            <td th:text="${user.student_name}">Name</td>
+            <td th:text="${user.student_age}">Age</td>
+            <td th:text="${user.student_mobile}">Mobile</td>
+            <td th:text="${user.gender}">Gender</td>
+            <td th:text="${user.skill}">Skill</td>
+        </tr>
+    </table>
+</body>
+</html>

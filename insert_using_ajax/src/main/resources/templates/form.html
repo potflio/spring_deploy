@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+</head>
+<body>
+    <h2>Enter User Details</h2>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="mobile">Mobile:</label>
+        <input type="number" id="mobile" required><br><br>
+
+        <label for="gen">gender</label>
+        <input type="radio" name="gen" id="gender" value="Male">Male
+        <input type="radio" name="gen" id="gender" value="Female">Female
+
+        <label for="skill">Programming Skills</label>
+        <input type="checkbox" name="skill" value="Python" id="skill">Python
+        <input type="checkbox" name="skill" value="Java" id="skill">Java
+        <input type="checkbox" name="skill" value="JavaScript" id="skill">Js
+        <input type="checkbox" name="skill" value="C++" id="skill">C++
+
+        <button type="submit">Submit</button>
+    </form>
+    <p id="responseMessage"></p>
+
+
+    <a href="view">click me to view the details</a>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
